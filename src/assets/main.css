@@ -1,0 +1,94 @@
+/* src/assets/main.css */
+@import 'vuetify/styles/main.css';
+@import './base.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-background-mute);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* Ajustes para o Vuetify */
+.v-container {
+  max-width: 1280px !important;
+  padding: 2rem 1rem !important;
+}
+
+/* Animações para as listas de tarefas */
+.task-list-move {
+  transition: all 0.4s ease;
+}
+
+.task-list-enter-active,
+.task-list-leave-active {
+  transition: all 0.4s ease;
+}
+
+.task-list-enter-from,
+.task-list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Estilos para os cards de tarefas */
+.task-card {
+  border-radius: var(--radius-lg) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.task-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.card-content {
+  padding: var(--space-lg);
+}
+
+/* Estilos para botões e controles */
+.v-btn {
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.v-btn--elevated {
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.v-btn--elevated:hover {
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .v-container {
+    padding: 1rem 0.5rem !important;
+  }
+
+  .task-grid {
+    gap: 1rem !important;
+  }
+}
+
+/* Tema escuro */
+.v-theme--dark .task-card {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.v-theme--dark .task-completed {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
