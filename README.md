@@ -6,11 +6,11 @@ Este projeto é uma aplicação web para gerenciamento de tarefas desenvolvida c
 
 ## Tecnologias Utilizadas
 
-- **Vue.js 3**: Framework JavaScript progressivo para construção de interfaces de usuário
-- **TypeScript**: Superset tipado de JavaScript que compila para JavaScript puro
-- **Vuetify**: Biblioteca de componentes UI para Vue.js baseada no Material Design
-- **Pinia**: Gerenciador de estado para Vue.js
-- **Vite**: Ferramenta de build que oferece um ambiente de desenvolvimento mais rápido
+- **Vue.js 3**: Framework frontend
+- **TypeScript**: Backend
+- **Vuetify**: Biblioteca de componentes
+- **Pinia**: Gerenciador de estado
+- **Vite**: Ferramenta de build 
 
 ## Funcionalidades Implementadas
 
@@ -23,28 +23,28 @@ Este projeto é uma aplicação web para gerenciamento de tarefas desenvolvida c
 
 ### Bônus Implementados
 
-- **Busca Textual**: Pesquisa de tarefas por título ou descrição
-- **Gerenciamento de Estados**: Utilização do Pinia para gerenciamento centralizado do estado da aplicação
+- **Busca Textual**: Pesquisa de tarefas por título
+- **Gerenciamento de Estados**: gerenciamento do estado
 - **Armazenamento Local**: Persistência dos dados no localStorage do navegador
 - **Tema Claro/Escuro**: Suporte a alternância entre temas
 
 ## Estrutura do Projeto
 
 ```
-gerenciador-tarefas/
-├── public/              # Arquivos públicos
-├── src/                 # Código fonte
-│   ├── assets/          # Recursos estáticos (CSS, imagens)
-│   ├── components/      # Componentes Vue
-│   │   └── tasks/       # Componentes relacionados a tarefas
-│   ├── plugins/         # Plugins Vue (Vuetify)
-│   ├── router/          # Configuração de rotas
-│   ├── stores/          # Stores Pinia para gerenciamento de estado
-│   ├── views/           # Componentes de página
-│   ├── App.vue          # Componente raiz
-│   └── main.ts          # Ponto de entrada da aplicação
-├── package.json         # Dependências e scripts
-└── vite.config.ts       # Configuração do Vite
+GerenciadorDeTarefas/
+├── public/              
+├── src/                 
+│   ├── assets/          
+│   ├── components/      
+│   │   └── tasks/       
+│   ├── plugins/         
+│   ├── router/          
+│   ├── stores/         
+│   ├── views/         
+│   ├── App.vue         
+│   └── main.ts        
+├── package.json     
+└── vite.config.ts
 ```
 
 ## Instalação e Execução
@@ -58,8 +58,8 @@ gerenciador-tarefas/
 
 1. Clone o repositório:
    ```sh
-   git clone [URL_DO_REPOSITÓRIO]
-   cd gerenciador-tarefas
+   git clone https://github.com/FernandoGomesMonteiro/GerenciadorDeTarefas.git
+   cd GerenciadorDeTarefas
    ```
 
 2. Instale as dependências:
@@ -96,7 +96,3 @@ yarn build
 - **Filtrar Tarefas**: Use os controles de filtro no topo da página
 - **Buscar Tarefas**: Digite no campo de busca para encontrar tarefas específicas
 - **Alternar Tema**: Clique no ícone de tema na barra superior
-
-## Observações
-
-A aplicação utiliza o localStorage do navegador para persistência de dados, o que significa que as tarefas são armazenadas apenas no navegador do usuário. Em um ambiente de produção, seria recomendável implementar um backend para armazenamento permanente dos dados.
